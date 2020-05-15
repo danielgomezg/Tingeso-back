@@ -35,7 +35,44 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+		<dependency>
+   			<groupId>javax.persistence</groupId>
+   			<artifactId>persistence-api</artifactId>
+   			<version>1.0.2</version>
+   			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+    		<groupId>org.projectlombok</groupId>
+    		<artifactId>lombok</artifactId>
+    		<version>1.16.18</version>
+    		<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+    		<groupId>org.springframework.data</groupId>
+    		<artifactId>spring-data-jpa</artifactId>
+    		<version>1.7.2.RELEASE</version>
+		</dependency>
+
+
+		<!-- Configuracion del ORM de spring boot para persistencia -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- Conector/libreria de MYSQL para java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 	</dependencies>
+
+	
 
 	<build>
 		<plugins>
