@@ -10,11 +10,12 @@ import com.Tingesoback.Tingeso.models.Estudiante;
 @RestController
 @RequestMapping("/")
 @CrossOrigin(origins = "*")
-public class EstudianteController{
-    
+public class EstudianteController {
+
     @Autowired
     EstudianteRepository repository;
 
+    //nodse ssofmsd
     //obtener estudiantes
     @GetMapping("/estudiantes")
     public List<Estudiante> getAllNotes() {
